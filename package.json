@@ -2,7 +2,7 @@
   "name": "automated-api-testing",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:gerardbenavides/automated-api-tests.git",
+  "repository": "git@github.com:gerardbenavides/automated-api-testing.git",
   "author": "Gerard Paul Benavides",
   "license": "MIT",
   "scripts": {
