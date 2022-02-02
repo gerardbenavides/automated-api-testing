@@ -1,0 +1,28 @@
+{
+  "name": "automated-api-testing",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:gerardbenavides/automated-api-tests.git",
+  "author": "Gerard Paul Benavides",
+  "license": "MIT",
+  "scripts": {
+    "test:local": "mocha --config ./environments/config.js --reporter spec specs/**/*.spec.js",
+    "test:dev": "mocha --config ./environments/config.js --reporter mochawesome specs/**/*.spec.js env=dev",
+    "test:dev-parallel": "mocha --parallel --jobs 24 --config ./environments/config.js --reporter mochawesome specs/**/*.spec.js env=dev",
+    "test:stage": "mocha --config ./environments/config.js --reporter mochawesome specs/**/*.spec.js env=stage",
+    "test:stage-parallel": "mocha --parallel --jobs 24 --config ./environments/config.js --reporter mochawesome specs/**/*.spec.js env=stage",
+    "test:dev-subset": "mocha --config ./environments/stage.env.js --reporter mochawesome",
+    "test:stage-subset": "mocha --config ./environments/stage.env.js --reporter mochawesome",
+    "html:api": "mocha --config ./environments/config.js --reporter mochawesome specs/**/*.spec.js"
+  },
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chance": "^1.1.7",
+    "mocha": "^8.1.1",
+    "mochawesome": "^6.2.2",
+    "moment": "^2.26.0",
+    "moment-timezone": "^0.5.31",
+    "supertest": "^6.1.3",
+    "uuid": "^8.1.0"
+  }
+}

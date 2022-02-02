@@ -1,0 +1,171 @@
+{
+	"paymentMethodId": "pm_1IxdP7Im56RF6P9oIgdQ3pKr",
+	"method": "stripe",
+	"eventIds": ["5e3f9045-317e-40cd-9754-72af6e590f5b"],
+	"price": 0,
+	"location": {
+		"locationData": {
+			"data": {
+				"ip": "209.146.18.107",
+				"country": "Philippines",
+				"countryCode": "PH",
+				"continent": "Asia",
+				"city": "Tupi",
+				"zip": "9505",
+				"state": "12",
+				"lat": 6.3344,
+				"lon": 124.9528,
+				"timezone": "Asia/Manila"
+			},
+			"status": 200,
+			"statusText": "",
+			"headers": {
+				"content-length": "178",
+				"content-type": "application/json; charset=utf-8"
+			},
+			"config": {
+				"url": "https://stage-api.mhcdn.tv/info/ip",
+				"method": "get",
+				"headers": {
+					"Accept": "application/json, text/plain, */*"
+				},
+				"transformRequest": [null],
+				"transformResponse": [null],
+				"timeout": 0,
+				"xsrfCookieName": "XSRF-TOKEN",
+				"xsrfHeaderName": "X-XSRF-TOKEN",
+				"maxContentLength": -1
+			},
+			"request": {}
+		},
+		"address": {
+			"normalized_shipping_country": null
+		}
+	},
+	"quantity": 1,
+	"selectedCurrency": "PHP",
+	"timezone": "America/Los_Angeles",
+	"mailingList": true,
+	"selectedBundle": null,
+	"saveCard": false,
+	"bundleDetails": {
+		"askAddress": false,
+		"askWalletAddress": false,
+		"askShippingAddress": false
+	},
+	"selectedMerchAddOnDetails": {},
+	"accessCode": "",
+	"userInfo": {
+		"data": {
+			"id": "a4533f82-ffde-4791-9608-e226ab5fd093",
+			"firstName": "Test MH",
+			"lastName": "Staging",
+			"slug": "test-mhstaging4",
+			"email": "test.mh.staging+main@gmail.com",
+			"passwordHash": "$2b$10$OfX2xnQJa6qa6HwyJ0SifeClBFPN1RWKJRi6OfhINjWgz1Rxg0Obe",
+			"createdAt": "2021-05-10T22:06:15.869Z",
+			"updatedAt": "2021-05-10T22:06:15.869Z",
+			"isSuper": true,
+			"stripeAccountId": null,
+			"phone": null,
+			"resetPasswordToken": null,
+			"isVerified": false,
+			"paypal": null,
+			"stripeCustomerId": null,
+			"externalBillingId": "cus_JScl6IybXE9tio",
+			"lang": "en",
+			"timezone": "America/Los_Angeles",
+			"image": "user/1621280654978_blurred-abstract-background-interior-view-looking-out-toward-empty-office-lobby-entrance-doors-glass-curtain-wall-with-frame_1339-6364.jpeg",
+			"bio": null,
+			"instagram": null,
+			"shippingAddresses": [{
+				"id": "3522a634-f11f-4049-8995-29c1a3bd5534",
+				"userId": "a4533f82-ffde-4791-9608-e226ab5fd093",
+				"fullName": "Test PH Address",
+				"line1": "blk 7 lot 10",
+				"line2": "Cottage Ave",
+				"city": "Sharon Springs",
+				"province": "Davao del Sur",
+				"country": "Philippines",
+				"zip": "8001",
+				"rawAddress": "blk 7 lot 10 Sharon Springs Davao del Sur 8001",
+				"createdAt": "2021-06-01T20:59:26.772Z",
+				"updatedAt": "2021-06-01T20:59:26.772Z",
+				"deletedAt": null,
+				"countryAlpha2Code": "PH",
+				"countryAlpha3Code": "PHL",
+				"smartyStreetValidated": false,
+				"phoneNumber": "+6311002312",
+				"type": "mailing"
+			}, {
+				"id": "02b5bbbe-2ea9-4038-8d69-31ad29e2ce6e",
+				"userId": "a4533f82-ffde-4791-9608-e226ab5fd093",
+				"fullName": "a",
+				"line1": "Cottage Avenue",
+				"line2": "Sharon Springs",
+				"city": "Baltimore",
+				"province": "MD",
+				"country": "United States of America",
+				"zip": "21215",
+				"rawAddress": "Cottage Avenue, Baltimore, MD, USA",
+				"createdAt": "2021-06-02T22:48:07.024Z",
+				"updatedAt": "2021-06-02T22:48:07.024Z",
+				"deletedAt": null,
+				"countryAlpha2Code": "US",
+				"countryAlpha3Code": "USA",
+				"smartyStreetValidated": true,
+				"phoneNumber": "",
+				"type": "mailing"
+			}],
+			"paymentMethods": [{
+				"id": "pm_1IxK1mIm56RF6P9ofbSeEyF7",
+				"userId": "a4533f82-ffde-4791-9608-e226ab5fd093",
+				"stripeCustomerId": "cus_JScl6IybXE9tio",
+				"isDefault": true,
+				"paymentMethodType": "card",
+				"billingName": "Declined card~",
+				"cardBrand": "visa",
+				"cardCountry": "US",
+				"cardExpMonth": "11",
+				"cardExpYear": "2031",
+				"cardLast4": "4954",
+				"cardFunding": "credit",
+				"deletedAt": null,
+				"createdAt": "2021-05-31T22:56:12.433Z"
+			}, {
+				"id": "pm_1IxdP7Im56RF6P9oIgdQ3pKr",
+				"userId": "a4533f82-ffde-4791-9608-e226ab5fd093",
+				"stripeCustomerId": "cus_JScl6IybXE9tio",
+				"isDefault": true,
+				"paymentMethodType": "card",
+				"billingName": "Auto Tester",
+				"cardBrand": "visa",
+				"cardCountry": "US",
+				"cardExpMonth": "12",
+				"cardExpYear": "2031",
+				"cardLast4": "4242",
+				"cardFunding": "credit",
+				"deletedAt": null,
+				"createdAt": "2021-06-01T19:37:34.806Z"
+			}]
+		},
+		"isLoggedIn": true,
+		"name": "",
+		"password": ""
+	},
+	"giftingInfo": {
+		"purchaserName": "",
+		"gifteeName": "",
+		"gifteeEmail": "",
+		"sendToGiftee": false
+	},
+	"addOns": {
+		"meetAndGreet": [],
+		"prePost": ["post"],
+		"external": ["5b840edf-18a4-4c72-8d1d-5648914540fa"],
+		"merch": []
+	},
+	"shippingAddressId": null,
+	"captchaToken": "03AGdBq27kPX9_cstINT5lsLf48U1N8qgWc32wjSvOB3Op03Ttsr4dGJKmvueRBEHmuc5pS2WyH5C1K5awemAHH8kCrgJkzBOoSvu8x4YUEvq3RdMKOOcTKCKQMRm6I6hOwpET-x0kzo5UjQZOkSigXwG-LSKiHTQ7T6z6b4ikczEQFBgFTj28t8Lma6V-kMFaPxQt_GMnfzX0FLIdk-sVQXPwP2ONOaHFdFbrf9MSsEkcMknkKOiBLfvyl8fqCf59XhdasXSiRl2WKEGk0Mi6cE7BSSahLerVMJ85WAHV7ywiMhlFJ9wuKZBtU-3D3dxi1C_PIAavGINQjD754nlxXVYcQHNWaZMhKiiURS0SWluKBGWtCmYRcEOYoQS1OW39F6KoV6qSopDRa87kyY4eZyEB8qQjozGzF_TvCf0Rgtthjdb997v1F1Urpe3U9kd9js7NW7t5SSPls6UvaDVgUhtXRmUd1ujYq8TYrEuGRuwlFwexv0chyuwYn362i3BpTsg1AMAj5x1MCxxO-SqJfM5Mmna8U40JM3b5tIY8pSyUMhFIRcZnmvULnPBCxAcRor4EYaY0tIw9KjkJfPwbfKDf7Wzq0QdIRfJIQqW0XwCWwGwJIqmJ2itMFiLOq-x70N4Tw9aWZOIojB-ILbjGieZ_emKlUMn5LE1eTkwHVbrh16_pIzRLo8TpM6Q5IJOqSeU9TAP0WrnXIwZXCyHWvWzrDSYrF8bqZTKAaPg5b8UtQPSQAw9wFRErDWvz5sGY-XSxs-7IOyIfz-_st8XSLl2XICQGaWx4eMXMv5roDvsheVdfEbVtopFrZvgibPExAPp6zg574Y5huRIPsJqeCpC99gABiBb-HYVwCo7G_oyGPGrzNHICDU_BH2feAPeQ0STdBYh8G1rL0nv23pf0mwNUPU2QQnkPHGmpTE6sTrJeiWkeNYAzoeJl3NNNa-vTetDeKrzCzjR-ubdG9_wl6hM79HSpMTRJe6fyk9xp7s3d06q2yccXkzIq8ZQA4_oVibwqzV9y6YTbJRn_T7ltuwG4Sw4QFVf28ZNxfw24J9luX0D1aIsdLQCLRSK-Xr1Bz4k0uFDDSTFddWI2sujO8M6N0mAyvLz83wg8s3ci9eUOMD9gR_bOzJ6vbJvitY8UGkO9hfytQMnaKpJ5g4uB-2kswCkTrOyjSQ",
+	"priceDisplay": 1351688
+}

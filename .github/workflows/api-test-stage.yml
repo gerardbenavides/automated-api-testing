@@ -1,0 +1,57 @@
+name: (Stage) Automated API tests
+on:
+  repository_dispatch:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  setup-and-test-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Extract branch name
+        shell: bash
+        run: echo "##[set-output name=branch;]$(echo ${GITHUB_REF#refs/heads/})"
+        id: extract_branch
+
+      - name: Setup Node v16
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Cache node_modules
+        id: cache-modules
+        uses: actions/cache@v2
+        with:
+          path: node_modules
+          key: yarn-packages-{{ steps.extract_branch.outputs.branch }}-{{ checksum "yarn.lock" }}
+
+      - name: Install modules
+        if: steps.cache-modules.outputs.cache-hit != 'true'
+        run: yarn
+
+      - name: Run API tests
+        run: yarn test:stage-parallel
+
+      - name: Slack Notification
+        if: always()
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: alert-automated-tests
+          SLACK_USERNAME: Automated API Tests
+          SLACK_MESSAGE: "Test run status: ${{ job.status }}"
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_ICON: "https://pbs.twimg.com/profile_images/1440844820482641925/yMfO-VCH_400x400.jpg"
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+
+      - name: Archive test report
+        if: always()
+        uses: actions/upload-artifact@v2
+        with:
+          name: api-test-report
+          path: mochawesome-report/*
