@@ -1,4 +1,4 @@
-# MomentHouse Automated API Tests [Notion](https://www.notion.so/momenthouse/Automated-API-Testing-6d73c3d15add47a29cf9c04eef93f76d)
+# Automated API Tests Framework
 
 ## Features
 
@@ -26,7 +26,7 @@ You may verifiy if yarn is available on your machine by running the following co
 
 ### Getting started
 
-1. Clone the [Automated API Testing repository](https://github.com/momenthouse/automated-api-testing) from Github
+1. Clone the [Automated API Testing repository](https://github.com/gerardbenavides/automated-api-testing) from Github
 2. To install project dependencies, go to the cloned repository directory folder from your machine
 3. Open terminal from there and run command `yarn`. This will start installing the dependencies
 
